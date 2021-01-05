@@ -5,22 +5,6 @@
 #ifndef CREST_OCEAN_FOAM_INCLUDED
 #define CREST_OCEAN_FOAM_INCLUDED
 
-#if _FOAM_ON
-
-uniform sampler2D _FoamTexture;
-uniform half _FoamScale;
-uniform float4 _FoamTexture_TexelSize;
-uniform half4 _FoamWhiteColor;
-uniform half4 _FoamBubbleColor;
-uniform half _FoamBubbleParallax;
-uniform half _ShorelineFoamMinDepth;
-uniform half _WaveFoamFeather;
-uniform half _WaveFoamBubblesCoverage;
-uniform half _WaveFoamNormalStrength;
-uniform half _WaveFoamSpecularFallOff;
-uniform half _WaveFoamSpecularBoost;
-uniform half _WaveFoamLightScale;
-
 half3 AmbientLight()
 {
 	return half3(unity_SHAr.w, unity_SHAg.w, unity_SHAb.w);
@@ -112,7 +96,5 @@ void ComputeFoamWithFlow(half2 flow, half i_foam, float2 i_worldXZUndisplaced, f
 	o_bubbleCol = (sample1_weight * o_bubbleCol1) + (sample2_weight * o_bubbleCol2);
 	o_whiteFoamCol = (sample1_weight * o_whiteFoamCol1) + (sample2_weight * o_whiteFoamCol2);
 }
-
-#endif // _FOAM_ON
 
 #endif // CREST_OCEAN_FOAM_INCLUDED

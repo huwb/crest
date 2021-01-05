@@ -5,11 +5,6 @@
 #ifndef CREST_OCEAN_NORMAL_MAPPING_INCLUDED
 #define CREST_OCEAN_NORMAL_MAPPING_INCLUDED
 
-#if _APPLYNORMALMAPPING_ON
-
-uniform half _NormalsStrength;
-uniform half _NormalsScale;
-
 half2 SampleNormalMaps(float2 worldXZUndisplaced, float lodAlpha, in const CascadeParams cascadeData, in const PerCascadeInstanceData instanceData)
 {
 	const float lodDataGridSize = cascadeData._texelWidth;
@@ -60,7 +55,5 @@ void ApplyNormalMapsWithFlow(float2 worldXZUndisplaced, float2 flow, float lodAl
 	io_n.xz += sample2_weight * io_n_2;
 	io_n = normalize(io_n);
 }
-
-#endif // _APPLYNORMALMAPPING_ON
 
 #endif // CREST_OCEAN_NORMAL_MAPPING_INCLUDED
