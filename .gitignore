@@ -55,3 +55,6 @@ src/exr_processor/Release/exr_processor.ipdb
 /src/TextureReadbackTest/TextureReadbackTest.sln
 /src/TextureReadbackTest/Unity.PackageManagerUI.Editor.csproj
 /src/TextureReadbackTest/UnityEditor.StandardEvents.csproj
+
+/docs/_build/*
+/.vscode/
