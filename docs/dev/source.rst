@@ -1,4 +1,6 @@
-Source
+.. _source:
+
+Complete API
 ======
 
 .. toctree::
