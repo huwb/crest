@@ -33,9 +33,9 @@ Links to the scriptable render pipeline versions (URP/HDRP) on the Asset Store m
    :maxdepth: 2
    :caption: User Guide
    
-   usage/installation
-   usage/quickstart
-
+   user/installation
+   user/quickstart
+   user/support
    
 .. toctree::
    :maxdepth: 1
