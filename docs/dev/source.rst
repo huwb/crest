@@ -6,4 +6,3 @@ Complete API
 .. toctree::
    :maxdepth: 2
    
-   

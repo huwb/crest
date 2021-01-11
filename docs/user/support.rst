@@ -30,7 +30,7 @@ if there is already a fix or ongoing work. If you don't find an issue which matc
     information about how to submit an issue or contribute to the project.
 
 Known Issues
-'''''''''''''
+-------------
 Some noteworthy known issues are:
 
 * Sky solutions such as Azure[Sky] require some code to be added to the ocean shader for the fogging/scattering to work.
@@ -38,3 +38,4 @@ Some noteworthy known issues are:
   `wiki <https://github.com/crest-ocean/crest/wiki>`_ for examples.
 * The built-in render pipeline version of **Crest** requires the `Draw Instanced` option on terrains to be disabled at start time.
   It can safely be re-enabled after the `Depth Cache` is populated.
+
