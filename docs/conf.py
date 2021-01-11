@@ -21,7 +21,7 @@ import sphinx_rtd_theme
 
 project = 'Crest Ocean System'
 copyright = "2019-2020 Wave Harmonic Ltd and contributors"
-author = 'Docs: Nikhil Iyer'
+author = 'Nikhil Iyer'
 
 # -- General configuration ---------------------------------------------------
 
@@ -52,6 +52,7 @@ html_theme_options = {
     'logo_only': True,
     'display_version': False,
 }
+html_favicon = 'crest-oceanrender-logomark.png'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
